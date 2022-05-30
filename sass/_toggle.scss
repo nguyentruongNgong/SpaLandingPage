@@ -1,0 +1,33 @@
+.checkbox {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  &__input {
+    display: none;
+    &:checked + .checkbox__label {
+      background-color: $color-primary;
+      box-shadow: 0 0 0 2400px rgba(#092c3e, 0.8);
+      .checkbox__spin {
+        background-color: #ccc;
+        transform: translateX(3rem);
+      }
+    }
+  }
+  &__label {
+    display: inline-block;
+    width: 6rem;
+    height: 3rem;
+    background-color: #ccc;
+    border-radius: 3rem;
+    padding: 2.5px;
+    transition: 0.25s linear;
+  }
+  &__spin {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $color-primary;
+    border-radius: 2rem;
+    transition: 0.25s linear;
+  }
+}

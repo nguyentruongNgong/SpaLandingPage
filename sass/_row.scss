@@ -1,0 +1,51 @@
+.row {
+  padding: 5rem 0;
+  background-color: #fff9f8;
+  &-icon {
+    display: inline-block;
+    margin-left: 0 auto;
+  }
+  &-bottom {
+    margin-top: 5.5rem;
+  }
+  &-author-avatar {
+    display: inline-block;
+    margin-left: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 3rem;
+  }
+  &-desc {
+    margin-top: 5rem;
+    font-family: $primary-font;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  &-author-name {
+    font-family: $primary-font;
+    font-size: 20px;
+  }
+  &-author-note {
+    font-family: $secondnary-font;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  &-button {
+    margin-top: 5rem;
+    text-align: center;
+    margin-left: -0.5rem;
+  }
+  &-button-circle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ffc3c2;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: all 0.25 linear;
+    &:hover {
+      background-color: #ff8784;
+    }
+  }
+}

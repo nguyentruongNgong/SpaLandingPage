@@ -1,0 +1,127 @@
+.header {
+  position: relative;
+  height: 61.5rem;
+  &-top {
+    display: flex;
+    align-items: flex-end;
+    flex: row;
+  }
+  &-image {
+    max-width: 11rem;
+  }
+  &-menu {
+    margin-left: 14.5rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    &-item {
+      margin-bottom: 0.5rem;
+    }
+    &-link {
+      color: $color-primary;
+      margin-left: 5.5rem;
+      text-transform: uppercase;
+      font-family: $secondnary-font;
+      padding-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1.4rem;
+      transition: all 0.25s linear;
+      &:hover {
+        color: #989898;
+      }
+    }
+  }
+  &-main {
+    margin-top: 10rem;
+    max-width: 55.5rem;
+  }
+  &-content-spa {
+    font-size: 1.5em;
+    font-family: $primary-font;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ff817e;
+    margin-bottom: 4.5rem;
+  }
+  &-content-title {
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1.2;
+    color: $color-primary;
+    margin-bottom: 3.5rem;
+  }
+  &-content-desc {
+    font-family: $secondnary-font;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    color: #bbbbbb;
+  }
+  &-bottom {
+    margin-top: 4rem;
+    display: flex;
+  }
+  &-button-left {
+    padding: 1.5rem 2.5rem;
+    background-color: #ff817e;
+    color: white;
+    font-family: $secondnary-font;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  &-button-icon {
+    margin-left: 8px;
+  }
+  &-button-play {
+    margin-left: 2rem;
+    padding: 2.5rem;
+    position: relative;
+    i {
+      margin-left: -1rem;
+      color: #ff817e;
+    }
+    span {
+      margin-left: 2rem;
+      font-family: $secondnary-font;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: $color-primary;
+      transition: all 0.25s linear;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: #fcf5eed0;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 4rem;
+      height: 4rem;
+      z-index: -22;
+      border-radius: 50%;
+    }
+    &:hover {
+      .header-button-desc {
+        color: #ff817e;
+      }
+    }
+  }
+  &-img-left {
+    position: absolute;
+    top: 17rem;
+    left: 0;
+    width: 14.5rem;
+    height: 39rem;
+    z-index: -22;
+  }
+  &-img-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: auto;
+    z-index: -22;
+  }
+}

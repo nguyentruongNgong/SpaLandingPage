@@ -1,0 +1,268 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-size: 15px;
+  color: #263a41;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.header {
+  position: relative;
+  height: 61.5rem;
+}
+.header-top {
+  display: flex;
+  align-items: flex-end;
+  flex: row;
+}
+.header-image {
+  max-width: 11rem;
+}
+.header-menu {
+  margin-left: 14.5rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+.header-menu-item {
+  margin-bottom: 0.5rem;
+}
+.header-menu-link {
+  color: #263a41;
+  margin-left: 5.5rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: all 0.25s linear;
+}
+.header-menu-link:hover {
+  color: #989898;
+}
+.header-main {
+  margin-top: 10rem;
+  max-width: 55.5rem;
+}
+.header-content-spa {
+  font-size: 1.5em;
+  font-family: "Rufina", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ff817e;
+  margin-bottom: 4.5rem;
+}
+.header-content-title {
+  font-family: "Rufina", sans-serif;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1.2;
+  color: #263a41;
+  margin-bottom: 3.5rem;
+}
+.header-content-desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: #bbbbbb;
+}
+.header-bottom {
+  margin-top: 4rem;
+  display: flex;
+}
+.header-button-left {
+  padding: 1.5rem 2.5rem;
+  background-color: #ff817e;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header-button-icon {
+  margin-left: 8px;
+}
+.header-button-play {
+  margin-left: 2rem;
+  padding: 2.5rem;
+  position: relative;
+}
+.header-button-play i {
+  margin-left: -1rem;
+  color: #ff817e;
+}
+.header-button-play span {
+  margin-left: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #263a41;
+  transition: all 0.25s linear;
+}
+.header-button-play:before {
+  content: "";
+  position: absolute;
+  background-color: #fcf5eed0;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 4rem;
+  height: 4rem;
+  z-index: -22;
+  border-radius: 50%;
+}
+.header-button-play:hover .header-button-desc {
+  color: #ff817e;
+}
+.header-img-left {
+  position: absolute;
+  top: 17rem;
+  left: 0;
+  width: 14.5rem;
+  height: 39rem;
+  z-index: -22;
+}
+.header-img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: auto;
+  z-index: -22;
+}
+
+.about {
+  padding-top: 10rem;
+}
+.about-image-top {
+  position: absolute;
+  top: -6rem;
+  left: 8.5rem;
+}
+.about-icon {
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+.about-spa {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ff817e;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 4rem;
+}
+.about-title {
+  font-family: "Rufina", sans-serif;
+  font-weight: bold;
+  font-size: 4.2rem;
+  color: #263a41;
+  margin-bottom: 4rem;
+}
+.about-desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  margin-bottom: 6.5rem;
+}
+.about-button {
+  padding: 1.5rem 3.5rem;
+  border-radius: 3rem;
+  background-color: #ff817e;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.about-button:hover {
+  color: #263a41;
+}
+.about-image-middle {
+  position: absolute;
+  right: 0;
+  top: 20rem;
+}
+.about-list {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 12.5rem;
+  margin-left: -5px;
+}
+.about-item {
+  margin-left: 5px;
+  width: calc(25% - 5px);
+  position: relative;
+}
+.about-ontop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 129, 126, 0.8), rgba(255, 129, 126, 0.8));
+}
+
+.container {
+  position: relative;
+}
+
+.block {
+  text-align: center;
+  padding: 0 8.5rem;
+}
+
+/*# sourceMappingURL=css.styles.css.map */

@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  align-items: stretch;
+  height: 50rem;
+  &-image {
+    width: 40%;
+  }
+  &-signup {
+    width: 60%;
+  }
+  &-wrap {
+    padding: 4rem 8rem 4rem 8rem;
+    background-color: #fff9f8;
+    height: 50rem;
+  }
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    margin-left: 0.75rem;
+  }
+  &-signup-input {
+    display: inline-block;
+    padding: 2rem 3rem;
+    width: 100%;
+    border-bottom: 1px solid $text-color;
+    background-color: #fff9f8;
+    transition: all 0.25s linear;
+    &::-webkit-input-placeholder {
+      color: $text-color;
+    }
+    &:focus {
+      border: 1px solid $text-color;
+      border-radius: 3px;
+    }
+  }
+  &-signup-note {
+    width: 100%;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid $text-color;
+    background-color: #fff9f8;
+    &:focus {
+      border: 1px solid $text-color;
+      border-radius: 3px;
+    }
+  }
+  &-signup-groups {
+    width: calc(50% - 0.75rem);
+  }
+  &-signup-button {
+    padding: 1.5rem 2.5rem;
+    border-radius: 2.5rem;
+    background-color: #ff817e;
+    color: white;
+    font-size: 1.6rem;
+    font-family: $secondnary-font;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.25s linear;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
